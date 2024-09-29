@@ -1,15 +1,9 @@
 # ViT-CIFAR10
-This repo contains files , model and code . The ViT is trained on CIFAR-10 dataset and it is capable of getting 99.5% train accuracy and 93% test accuracy.
+This repo contains code . The ViT is trained on CIFAR-10 dataset and it is capable of getting 99.5% train accuracy and 93% test accuracy.
 
 # Vision Transformer (ViT) for CIFAR-10 Classification
 
 This repository contains an implementation of a Vision Transformer (ViT) model trained on the CIFAR-10 dataset. The project demonstrates the application of transformer architecture, typically used in natural language processing, to image classification tasks.
-
-## Repository Contents
-
-1. `ViT_cifar10_train.ipynb`: Jupyter notebook containing the code for model definition, training, and evaluation.
-2. `ViT_cifar10_test.ipynb`: Jupyter notebook for loading the trained model and performing inference on test data.
-3. `model_checkpoint_epoch_350_local.pt`: Saved checkpoint of the trained model after 350 epochs.
 
 ## Project Overview
 
@@ -43,25 +37,7 @@ The model is trained on the CIFAR-10 dataset, which consists of 60,000 32x32 col
 - Learning rate scheduling and regularization techniques for optimal training.
 - Checkpointing to save and load model states.
 
-## Usage
-
-### Training
-
-To train the model:
-
-1. Open `ViT_cifar10_train.ipynb` in a Jupyter environment.
-2. Run all cells to train the model.
-3. The trained model will be saved as a checkpoint file.
-
-### Testing
-
-To test the trained model:
-
-1. Open `ViT_cifar10_test.ipynb` in a Jupyter environment.
-2. Ensure `model_checkpoint_epoch_350_local.pt` is in the same directory.
-3. Run all cells to load the model and perform inference on test data.
-4. The notebook will display test accuracy and visualize predictions on sample images.
-
+## 
 ## Results
 
 The Vision Transformer model achieves significantly higher accuracy on the CIFAR-10 dataset compared to the initial CNN approach, demonstrating the effectiveness of the transformer architecture in image classification tasks.
@@ -72,14 +48,5 @@ The Vision Transformer model achieves significantly higher accuracy on the CIFAR
 - torchvision
 - matplotlib
 - numpy
-
-## Future Work
-
-- Experiment with different hyperparameters and model sizes.
-- Apply the model to other image classification datasets.
-- Implement more advanced data augmentation techniques.
-- Explore hybrid architectures combining CNNs and transformers.
-
-## References
 
 - Dosovitskiy, A., et al. (2020). An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale. arXiv preprint arXiv:2010.11929.
